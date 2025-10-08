@@ -1,0 +1,393 @@
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
+  <meta charset="utf-8">
+
+  <meta name="keywords" content="#1 Best Courier &amp; Logistics Company in UK">
+  <meta name="description" content="#1 Best Courier &amp; Logistics Company in UK">
+  <title>Tracking Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="" src="js/jquery.js"> </script>
+  <script type="" src="js/jquery-ui.custom.js"> </script>
+  <link href="js/jquery-ui.custom.js" media="screen" rel="stylesheet" type="text/css">
+  <script type="" src="js/jquery.idTabs.min.js"></script>
+  <link href="css/template.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/general.css" media="screen" rel="stylesheet" type="text/css">
+  <script type="" src="js/uploader.js"></script>
+  <link href="css/pagination.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/pagination.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/menu.css" media="screen" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/responsives.css">
+  <link href="images/favicon.png" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="css/styl.css" media="all">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- responsive css -->
+
+  <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+  <style>
+    .m-btm {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .mtn {
+      text-align: center;
+    }
+
+    .d-bl {
+      display: block;
+      margin-bottom: 25px;
+    }
+
+    #btnal {
+      background: teal;
+      color: aqua;
+      border-radius: 5px;
+      padding: 0.5rem;
+      font-size: 0.83rem;
+      cursor: pointer;
+    }
+
+    #btn {
+      background: teal;
+      color: aqua;
+      border-radius: 5px;
+      padding: 0.5rem;
+      font-size: 0.83rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!-- Tracker End-->
+
+    <!-- Banner Start -->
+    <div id="banner">
+      <div class="container">
+        <div class="bg"></div>
+      </div>
+
+      <!-- Tracker Start-->
+      <div class="block block-tracker">
+        <div class="h_container">
+          <form action="tracking.php" method="post" id="userForm" onsubmit="return validate()">
+            <p>TRACK YOUR SHIPMENT
+
+              <input type="text" name="search_P" id="Consignment" placeholder="Enter Tracking number">
+              <input type="submit" name="search" id="send" value="TRACK NOW">
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+  
+
+    <!-- Body Start-->
+    <div class="content_wrapper">
+      <div class="container">
+        <div class="section_row">
+          <div class="col_7">
+            <div class="main_content">
+              <div class="mod mod-article">
+                <div class="article-icon">
+
+
+                  <h1>Tracking Shipment &nbsp;
+
+              
+                      <a href="print.php?num=CL028452266" target="_blank" id="order-status" class="default"> Print-Invoice</a>
+               
+                  </h1>
+                </div>
+                <div class="clear"></div>
+
+
+                <div id="article_content_area"><strong>
+                    <font size="5">
+                      <font face="helvetica">
+                        <font size="5" color="#2c2c2c">Tracking No:</font>
+                        <font size="5" color="#C40202" face="arial,helvetica,sans-serif" id="tr_code">Loading...</font><br>
+                      </font>
+                    </font>
+
+                  </strong><br><br>
+
+                                    <br><br>
+                </div>
+
+                <div class="clear">&nbsp;</div>
+              </div>
+
+
+              <div class="block block-scrolling-ad">
+                <div class="block-content">
+                  <font size="5" color="#2c2c2c">Current Location on Map</font>
+                  <br>
+
+
+
+                  <div align="center">
+                    <div style="width: 100%; height: 300px;">
+                     <iframe class="map" id="mapId" style="border:0; width: 100%; height: 300px;"></iframe> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="col_3">
+            <div>
+
+              <center><img class="nav-profile-img mr-2" alt="" src="images/173972581016.png" style="width:330px; height:150px;">
+
+                <br>
+                <h3>Content of Shipment: <strong>Tesla Car</strong></h3>
+              </center>
+
+              <br><br>
+              <table>
+                <tbody><tr>
+                  <th>Est. Delivery Date :</th>
+                  <td id="edd">Loading...</td>
+
+                </tr>
+                <tr>
+                  <th>Origin Area:</th>
+                  <td id="origin">Loading...</td>
+                </tr>
+                <tr>
+                  <th>Destination Area:</th>
+                  <td id="dest">Loading...</td>
+                </tr>
+
+
+              </tbody></table>
+
+
+              <br><br>
+
+
+              <strong>
+                <font size="5" color="#C40202" face="arial,helvetica,sans-serif">Sender's Details</font>
+              </strong>
+              <br>
+              <table>
+                <tbody><tr>
+                  <th>Name:</th>
+                  <td id="shippername">Loading...</td>
+
+                </tr>
+
+                <tr>
+                  <th>Email:</th>
+                  <td id="shipperemail">Loading...</td>
+                </tr>
+
+                <tr>
+                  <th>Address:</th>
+                  <td id="shipperadd">Loading...</td>
+                </tr>
+
+                <tr>
+                  <th>Mobile:</th>
+                  <td id="shippertel">Loading...</td>
+
+                </tr>
+
+              </tbody></table>
+
+
+
+
+              <br><br>
+
+
+              <strong>
+                <font size="5" color="#C40202" face="arial,helvetica,sans-serif">Receiver's Details</font>
+              </strong>
+              <br>
+              <table>
+                <tbody><tr>
+                  <th>Name:</th>
+                  <td id="recname">Loading...</td>
+
+                </tr>
+
+                <tr>
+                  <th>Email:</th>
+                  <td id="recemail">Loading...</td>
+                </tr>
+
+                <tr>
+                  <th>Address:</th>
+                  <td id="recadd">Loading...</td>
+                </tr>
+
+                <tr>
+                  <th>Mobile:</th>
+                  <td id="rectel">Loading...</td>
+
+                </tr>
+
+              </tbody></table>
+
+
+
+              <br><br>
+
+
+
+              
+
+              <br><br>
+
+              <br><br>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Body End -->
+
+    
+    <!-- Footer Start -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="links-container">
+
+
+          <div class="social">
+            Always stay connected with us.. <br><br>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="20" height="20" border="0" title="Facebook"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" width="20" height="20" border="0" title="Twitter"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" width="20" height="20" border="0" title="Youtube"></a>
+            <a href="http://www.flickr.com/" target="_blank"><img src="images/flickr.png" width="20" height="20" border="0" title="Flickr"></a>
+            <a href="http://www.delicious.com/" target="_blank"><img src="images/delicious.png" width="20" height="20" border="0" title="Delicious"></a>
+            <a href="http://www.stumbleupon.com/" target="_blank"><img src="images/stumbleupon.png" width="20" height="20" border="0" title="Stumbleupon"></a>
+            <a href="http://www.digg.com/" target="_blank"><img src="images/digg.png" width="20" height="20" border="0" title="Digg"></a>
+            <a href="http://feeds.feedburner.com/" target="_blank"><img src="images/rss.png" width="20" height="20" border="0" title="RSS"></a>
+            <a href="https://plus.google.com/" target="_blank"><img src="images/google-plus-one.png" width="32" height="20" border="0" title="Google +1"></a>
+          </div>
+
+          <div class="copyright clear">
+            Copyright � 2023 All Rights Reserved.
+
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+  <div class="go-top"><a href="#top" id="scroll-top">Top</a></div>
+  <script type="text/javascript" src="js/scroll.js">
+  </script>
+
+
+  <script src="js/jquery.min_1.js"></script>
+  <script src="js/jquery.validate.js"></script>
+
+  <script src="js/bootstrap.min_1.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(".nav-tabs a").click(function() {
+        $(this).tab('show');
+      });
+    });
+  </script>
+
+
+  <script type="text/javascript" src="js/js.js"></script>
+
+  <script async="" src="js/js_1.js">
+  </script>
+
+  <script type="text/javascript">
+    function initialize() {
+      // put latitude and longitude data here
+      var latinfo = new google.maps.LatLng(6.6754553, -1.5854323);
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: latinfo,
+        zoom: 13
+      });
+      var marker = new google.maps.Marker({
+        map: map,
+        position: latinfo,
+        draggable: false,
+        animation: google.maps.Animation.BOUNCE,
+        anchorPoint: new google.maps.Point(0, -29)
+      });
+      var infowindow = new google.maps.InfoWindow();
+      google.maps.event.addListener(marker, 'click', function() {
+        var iwContent = '<div id="pop_window">' + '<div><b>Location</b> : Connaught Place, New Delhi</div></div>';
+        // put content to the infowindow
+        infowindow.setContent(iwContent);
+        // show infowindow in the google map and at the current marker location
+        infowindow.open(map, marker);
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script> 
+
+  <script src="js/track-info.js"></script>
+
+
+
+<!-- Smartsupp Live Chat script -->
+<!-- <script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '4787b7d169dac192c8b8c932fbb3f2ba39cc59f1';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=https://www.smartsupp.com target=_blank>Smartsupp</a></noscript> -->
+
+
+</body></html>
