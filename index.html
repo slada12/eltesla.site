@@ -1298,7 +1298,7 @@ status of your shipments.
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="https://expressworldshipments.com/contact/">
+											<a href="contact.html">
 
 											<span class="elementor-icon-list-text">Contact Us</span>
 											</a>
@@ -1477,6 +1477,39 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>
+
+
+<!-- <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".elementor-menu-toggle");
+  const navMenu = document.querySelector(".elementor-nav-menu__container");
+  const openIcon = document.querySelector(".eicon-menu-bar");
+  const closeIcon = document.querySelector(".eicon-close");
+
+  // Initialize: hide close icon
+  closeIcon.style.display = "none";
+
+  menuToggle.addEventListener("click", () => {
+    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+
+    // Toggle aria attributes
+    menuToggle.setAttribute("aria-expanded", !isExpanded);
+    navMenu.setAttribute("aria-hidden", isExpanded);
+
+    // Toggle visibility of menu
+    if (isExpanded) {
+      navMenu.style.display = "none";
+      openIcon.style.display = "inline-block";
+      closeIcon.style.display = "none";
+    } else {
+      navMenu.style.display = "block";
+      openIcon.style.display = "none";
+      closeIcon.style.display = "inline-block";
+    }
+  });
+});
+</script> -->
+
 			
 	
 
