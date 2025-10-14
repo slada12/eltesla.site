@@ -35,17 +35,23 @@ function getData() {
       console.log(iframe.src); // Logs the src URL
       iframe.src = `https://maps.google.com/maps?q=${currDest}&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed`
   
-      // const hdBg = document.getElementById('result-status-header')
+      const hdBg = document.getElementById('result-status-header')
   
-      // if (data.shipStatus === 'held') {
-      //   hdBg.style.backgroundColor = 'red'
-      //   hdBg.style.fontWeight = 900
-      //   return hdBg.textContent = 'ON HOLD';
-      // }
+      if (data.shipStatus === 'held') {
+        hdBg.style.backgroundColor = 'red'
+        hdBg.style.fontWeight = 900
+        hdBg.style.textAlign = 'center'
+        hdBg.style.padding = '12px'
+        hdBg.style.color = 'white'
+        return hdBg.textContent = 'ON HOLD';
+      }
   
-      // hdBg.style.backgroundColor = 'green'
-      // hdBg.style.fontWeight = 900
-      // return hdBg.textContent = 'IN TRANSIT';
+      hdBg.style.backgroundColor = 'green'
+      hdBg.style.fontWeight = 900
+      hdBg.style.textAlign = 'center'
+      hdBg.style.padding = '12px'
+      hdBg.style.color = 'white'
+      return hdBg.textContent = 'IN TRANSIT';
     } catch (error) {
       console.log(error);
     }
