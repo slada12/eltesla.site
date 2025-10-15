@@ -32,9 +32,9 @@ function getData() {
       // document.getElementById('comment').textContent = data.comment;
 
       const iframe = document.getElementById("mapId");
-      console.log(iframe.src); // Logs the src URL
-      iframe.src = `https://maps.google.com/maps?q=${currDest}&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed`
-  
+      console.log("Previous map URL:", iframe.src);
+      iframe.src = `https://maps.google.com/maps?q=${encodeURIComponent(currDest)}&t=k&z=13&ie=UTF8&iwloc=&output=embed`;
+
       const hdBg = document.getElementById('result-status-header')
   
       if (data.shipStatus === 'held') {
